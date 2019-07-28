@@ -1,0 +1,96 @@
+.prices {
+  width: 100%;
+  position: relative;
+  height: 80rem;
+  padding-top: $section-padding-large;
+  @include respond(tablet-l) {
+    height: 120rem;
+  }
+  &__background {
+    clip-path: polygon(0 0, 60% 0, 40% 100%, 0% 100%);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: $secondary-color-pink;
+    width: 100%;
+    z-index: -100;
+
+    @include respond(tablet-l) {
+      clip-path: none;
+      height: 50%;
+    }
+  }
+
+  &__primary-heading {
+    background-color: $secondary-color-yellow;
+    position: absolute;
+    left: 50%;
+    top: 5rem;
+    text-align: center;
+    padding: 1.7rem 8.5rem;
+    transform: skewX(-30deg) translateX(-50%);
+    box-shadow: 0.5rem 0.7rem 2rem rgba($primary-color-light, 0.2);
+
+    @include respond(tablet-l) {
+      padding: 1rem 2.5rem;
+      width: 60%;
+    }
+    @include respond(mobile-m) {
+      padding: 1rem 2.5rem;
+      width: 80%;
+    }
+    @include respond(mobile-s) {
+      padding: 1rem 2.5rem;
+      width: 80%;
+    }
+  }
+
+  &__skew-wrapper {
+    transform: skewX(30deg);
+    color: $primary-color-dark;
+    display: inline-block;
+  }
+
+  &__list {
+    margin: 5rem auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    height: 85%;
+    align-items: center;
+    & > * {
+      flex-basis: 35%;
+      width: 80%;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @include respond(tablet-l) {
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-between;
+      & > * {
+        width: 55%;
+      }
+    }
+  }
+  &__paid {
+    color: $secondary-color-white;
+    font-weight: 400;
+    font-size: 3.2rem;
+  }
+  &__free {
+    color: $secondary-color-pink;
+    font-weight: 500;
+    font-size: 3.2rem;
+    @include respond(tablet-l) {
+      margin-top: 5rem;
+    }
+  }
+
+  &__description {
+    width: 100%;
+    padding-top: 2.6rem;
+    font-size: 2.3rem;
+  }
+}

@@ -1,0 +1,12 @@
+:root {
+    --color-white: #ffffff;
+}
+.icon {
+  width: 2.3rem;
+  height: 2.3rem;
+
+&--twitter {
+    fill: var(--color-white);
+    margin-top: .6rem;
+}
+}

@@ -1,0 +1,26 @@
+.btn {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1.9rem;
+  text-align: center;
+  &--cta {
+    padding: 1.3rem 2.1rem;
+    display: inline-block;
+    border-radius: 0.7rem;
+    transition: all 0.3s ease-in-out;
+    font-size: 2rem;
+
+    &--pink {
+      color: #ffffff;
+      background-color: $secondary-color-pink;
+      &:hover {
+        box-shadow: 0.5rem 0.7rem 2rem rgba($primary-color-light, 0.5);
+        transform: translateY(-0.2rem);
+      }
+    }
+    &--white {
+      color: $primary-color-dark;
+      background-color: #ffffff;
+    }
+  }
+}

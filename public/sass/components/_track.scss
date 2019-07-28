@@ -1,0 +1,75 @@
+.track {
+  color: $secondary-color-white;
+  background-color: $primary-color-dark;
+  height: 40vh;
+
+  @include respond(mobile-m) {
+    padding-top: 20rem;
+  }
+  @include respond(tablet-l) {
+    height: 45vh;
+    padding-top: 10rem;
+  }
+  &__wrapper {
+    display: flex;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+
+    & > * {
+      flex-basis: 35%;
+      text-align: center;
+    }
+
+    @include respond(tablet-l) {
+      flex-direction: column;
+      height: 85%;
+      justify-content: space-evenly;
+      width: 100%;
+      & > * {
+        width: 80%;
+        flex-basis: 50%;
+      }
+    }
+
+    &--back-end {
+      @include respond(tablet-l) {
+        flex-direction: column-reverse;
+      }
+    }
+    @include respond(mobile-m) {
+      & > * {
+        width: 80%;
+        flex-basis: 50%;
+      }
+    }
+  }
+  &__heading-box {
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__primary-heading {
+    font-size: 4rem;
+    font-weight: 500;
+  }
+  &__description-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 40%;
+  }
+  &__description {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    font-size: 1.8rem;
+    padding: 2rem 2rem;
+    @include respond(tablet-l) {
+      text-align: center;
+    }
+  }
+}

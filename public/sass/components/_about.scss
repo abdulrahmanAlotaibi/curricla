@@ -1,0 +1,68 @@
+.about {
+  background-color: $primary-color-dark;
+  color: #ffffff;
+  height: 80rem;
+  text-align: center;
+  padding-top: $section-padding-large;
+  width: 100%;
+
+  @include respond(tablet-l) {
+    height: 150rem;
+  }
+
+  &__primary-heading {
+    font-weight: 400;
+    text-align: center;
+    font-size: 3.2rem;
+    @include respond(laptop-l) {
+      font-size: 2.8rem;
+    }
+  
+  }
+
+  &__list {
+    width: 80%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    height: 90%;
+    align-items: center;
+
+    & > * {
+      flex-basis: 25%;
+      height: 32rem;
+      overflow: auto;
+    }
+
+    @include respond(tablet-l) {
+      flex-direction: column;
+      padding-top: 7rem;
+      font-size: 1.8rem;
+      & > * {
+        flex-basis: 26%;
+        justify-content: space-evenly;
+        width: 50%;
+      }
+    }
+
+    @include respond(laptop-m) {
+      width: 100%;
+      & > * {
+      }
+    }
+  }
+  &__item {
+    padding-top: 3.2rem;
+    border: 0.2rem solid $secondary-color-pink;
+  }
+  &__secondary-heading {
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    font-size: 2.2rem;
+    margin-bottom: 4rem;
+  }
+
+  &__description {
+    padding: 0 2rem;
+  }
+}

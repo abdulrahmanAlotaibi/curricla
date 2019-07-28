@@ -1,0 +1,24 @@
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./base/reset";
+@import "./base/typography";
+@import "./base/base";
+
+@import "./components/navbar";
+@import "./components/button";
+@import "./components/about";
+@import "./components/prices";
+@import "./components/track";
+@import "./components/icon";
+@import "./components/link";
+@import "./components/course";
+@import "./components/menu-mobile";
+@import "./layout/grid";
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./pages/home";
+@import "./pages/front-end";
+@import "./pages/resources";
+@import "./pages/faq";
+@import "./pages/curriculum";

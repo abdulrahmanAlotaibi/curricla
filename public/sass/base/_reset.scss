@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  @include respond(tablet-l) {
+    font-size: 56.25%;
+  }
+  @include respond(tablet-s) {
+    font-size: 50%;
+  }
+  @include respond(mobile-l) {
+    font-size: 48%;
+  }
+  @include respond(mobile-m) {
+    font-size: 38%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
