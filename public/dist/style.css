@@ -443,11 +443,19 @@ ul {
       background-color: #ffffff;
       display: inline-block; }
     @media only screen and (max-width: 45em) {
+      .nav-mobile__icon::after {
+        width: 3rem;
+        height: 0.2rem; } }
+    @media only screen and (max-width: 45em) {
       .nav-mobile__icon::before {
         width: 3rem;
         height: 0.3rem; } }
     @media only screen and (max-width: 31.57em) {
-      .nav-mobile__icon, .nav-mobile__icon::after {
+      .nav-mobile__icon {
+        width: 3rem;
+        height: 0.3rem; } }
+    @media only screen and (max-width: 31.57em) {
+      .nav-mobile__icon::after {
         width: 3rem;
         height: 0.3rem; } }
     .nav-mobile__icon::before, .nav-mobile__icon::after {

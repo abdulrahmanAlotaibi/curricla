@@ -29,7 +29,7 @@ $breakpoint arguement choices:
     @media only screen and (max-width: 31.57em) {
       @content;
     }
-  } // 512px
+  } // 505px
 
   @if $breakpoint == tablet-s {
     @media only screen and (max-width: 45em) {
