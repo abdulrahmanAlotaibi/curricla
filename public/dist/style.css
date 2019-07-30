@@ -246,6 +246,7 @@ ul {
   .prices__free {
     color: #C11F9E;
     font-weight: 500;
+    font-weight: 400;
     font-size: 3.2rem; }
     @media only screen and (max-width: 57.25em) {
       .prices__free {

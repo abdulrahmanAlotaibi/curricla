@@ -88,6 +88,8 @@
   &__free {
     color: $secondary-color-pink;
     font-weight: 500;
+    font-weight: 400;
+
     font-size: 3.2rem;
     @include respond(tablet-l) {
       margin-top: 5rem;
