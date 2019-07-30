@@ -54,7 +54,7 @@ $breakpoint arguement choices:
   } // 1024px
 
   @if $breakpoint == laptop-m {
-    @media only screen and (max-width: 87.5em) {
+    @media only screen and (max-width: 89em) {
       @content;
     }
   } // 1400px

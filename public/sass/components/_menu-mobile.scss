@@ -27,7 +27,7 @@
     z-index: 1000;
     opacity: 0;
     width: 0;
-    background-color: $secondary-color-pink;
+    background-color: rgba($secondary-color-pink, 1);
     transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
@@ -52,7 +52,7 @@
       font-size: 4rem;
       font-weight: 400;
       padding: 1rem;
-      color: #ffffff;
+      color: $secondary-color-white;
       text-decoration: none;
       text-transform: uppercase;
       background-image: linear-gradient(
@@ -80,18 +80,31 @@
     position: relative;
     margin-top: 50%;
     transform: translateY(-50%);
+
     &,
     &::before,
     &::after {
       width: 3rem;
       height: 0.2rem;
-      background-color: #ffffff;
+      background-color: $secondary-color-white;
       display: inline-block;
     }
-
+    &::before {
+      @include respond(tablet-s) {
+        width: 3rem;
+        height: 0.3rem;
+      }
+    }
+    &,
+    &::after{
+      @include respond(mobile-l) {
+        width: 3rem;
+        height: 0.3rem;
+      }
+    }
     &::before,
     &::after {
-      content: "";
+      content: " ";
       position: absolute;
       left: 0;
       transition: all 0.2s;
