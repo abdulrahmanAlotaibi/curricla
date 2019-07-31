@@ -2,7 +2,7 @@
     font-family: Nunito;
     src: url(/public/fonts/NUNITO-REGULAR.TTF) format('woff2'),
         url(/public/fonts/nunito-v10-latin-regular.woff) format('woff');
-    font-display: optional;
+    font-display: fallback ;
 }
 
 

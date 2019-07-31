@@ -38,7 +38,7 @@ body {
 @font-face {
   font-family: Nunito;
   src: url(/public/fonts/NUNITO-REGULAR.TTF) format("woff2"), url(/public/fonts/nunito-v10-latin-regular.woff) format("woff");
-  font-display: optional; }
+  font-display: fallback; }
 
 body {
   font-family: Nunito, 'Arial';
@@ -108,7 +108,7 @@ ul {
     padding: 1.3rem 2.1rem;
     display: inline-block;
     border-radius: 0.7rem;
-    transition: all 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
     font-size: 2rem; }
     .btn--cta--pink {
       color: #ffffff;
@@ -334,7 +334,7 @@ ul {
 
 .link {
   cursor: pointer;
-  transition: all .3s ease-in-out; }
+  transition: transform .3s ease-in-out; }
   .link--twitter:hover {
     transform: scale(1.5); }
 
@@ -631,7 +631,8 @@ ul {
 .curriculum {
   padding: 10rem 0;
   color: #070707;
-  text-align: center; }
+  text-align: center;
+  height: 100rem; }
   .curriculum__primary-heading {
     font-weight: 400;
     margin-bottom: 8rem;
@@ -676,7 +677,7 @@ ul {
     border-radius: 0.51rem;
     cursor: pointer;
     transform: translateY(0rem);
-    transition: all 0.4s ease-in-out; }
+    transition: box-shadow 0.4s ease-in-out, transform 0.4s ease-in-out; }
     .curriculum__link:hover {
       box-shadow: 0.5rem 0.7rem 3rem rgba(74, 74, 74, 0.2);
       transform: translateY(-1rem); }

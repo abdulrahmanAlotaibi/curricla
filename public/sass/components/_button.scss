@@ -7,7 +7,7 @@
     padding: 1.3rem 2.1rem;
     display: inline-block;
     border-radius: 0.7rem;
-    transition: all 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
     font-size: 2rem;
 
     &--pink {
