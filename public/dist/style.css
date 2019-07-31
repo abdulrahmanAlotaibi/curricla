@@ -428,20 +428,18 @@ ul {
     font-size: 4rem;
     font-weight: 400;
     padding: 1rem;
-    color: transparent;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     background-image: linear-gradient(90deg, transparent 0%, transparent 50%, #E8DF1A 40%);
     background-size: 220%;
-    transition: all 0.2s; }
+    transition: all .2s; }
   .nav-mobile__link:hover, .nav-mobile__link:active {
     background-position: 100%;
     color: #070707; }
   .nav-mobile__checkbox:checked ~ .nav-mobile__nav {
     opacity: 1;
     width: 100%; }
-  .nav-mobile__checkbox:checked .nav-mobile__link {
-    color: #ffffff; }
   .nav-mobile__icon {
     position: relative;
     margin-top: 50%;
