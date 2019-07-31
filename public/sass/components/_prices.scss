@@ -48,7 +48,7 @@
     }
   }
   &__secondary-heading {
-    font-weight: 600;
+    font-weight: 500;
   }
   &__skew-wrapper {
     transform: skewX(30deg);
@@ -58,9 +58,9 @@
 
   &__list {
     margin: 5rem auto;
-    width: 100%;
+    width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 85%;
     align-items: center;
     & > * {

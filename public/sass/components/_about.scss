@@ -21,9 +21,10 @@
   }
 
   &__list {
-    width: 100%;
+    width: 80%;
     display: flex;
-    justify-content: space-evenly;
+    margin: 0 auto;
+    justify-content: space-between;
     height: 90%;
     align-items: center;
 

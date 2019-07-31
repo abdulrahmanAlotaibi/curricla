@@ -138,9 +138,10 @@ ul {
       .about__primary-heading {
         font-size: 2.8rem; } }
   .about__list {
-    width: 100%;
+    width: 80%;
     display: flex;
-    justify-content: space-evenly;
+    margin: 0 auto;
+    justify-content: space-between;
     height: 90%;
     align-items: center; }
     .about__list > * {
@@ -216,16 +217,16 @@ ul {
         padding: 1rem 2.5rem;
         width: 80%; } }
   .prices__secondary-heading {
-    font-weight: 600; }
+    font-weight: 500; }
   .prices__skew-wrapper {
     transform: skewX(30deg);
     color: #070707;
     display: inline-block; }
   .prices__list {
     margin: 5rem auto;
-    width: 100%;
+    width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 85%;
     align-items: center; }
     .prices__list > * {
@@ -275,9 +276,9 @@ ul {
   .track__wrapper {
     display: flex;
     height: 100%;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center; }
     .track__wrapper > * {
       flex-basis: 35%;
