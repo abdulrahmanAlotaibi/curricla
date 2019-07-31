@@ -19,12 +19,12 @@
   }
 
   &__nav {
+    display: none;
     height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1000;
-    opacity: 0;
     width: 0;
     background-color: rgba($secondary-color-pink, 1);
     transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -47,7 +47,6 @@
   &__link {
     &:link,
     &:visited {
-      display: none;
       font-size: 4rem;
       font-weight: 400;
       padding: 1rem;
@@ -61,7 +60,7 @@
         $secondary-color-yellow 40%
       );
       background-size: 220%;
-      transition: all .2s;
+      transition: all 0.2s;
     }
 
     &:hover,
@@ -71,12 +70,10 @@
     }
   }
   &__checkbox:checked ~ &__nav {
-    opacity: 1;
+    display: initial;
     width: 100%;
   }
-  &__checkbox:checked &__link {
-    display: inline-block;
-  }
+
   &__icon {
     position: relative;
     margin-top: 50%;

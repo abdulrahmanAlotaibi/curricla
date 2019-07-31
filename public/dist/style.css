@@ -404,12 +404,12 @@ ul {
     text-align: center;
     cursor: pointer; }
   .nav-mobile__nav {
+    display: none;
     height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1000;
-    opacity: 0;
     width: 0;
     background-color: #c11f9e;
     transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
@@ -424,7 +424,6 @@ ul {
   .nav-mobile__item {
     margin: 1rem; }
   .nav-mobile__link:link, .nav-mobile__link:visited {
-    display: none;
     font-size: 4rem;
     font-weight: 400;
     padding: 1rem;
@@ -433,15 +432,13 @@ ul {
     text-transform: uppercase;
     background-image: linear-gradient(90deg, transparent 0%, transparent 50%, #E8DF1A 40%);
     background-size: 220%;
-    transition: all .2s; }
+    transition: all 0.2s; }
   .nav-mobile__link:hover, .nav-mobile__link:active {
     background-position: 100%;
     color: #070707; }
   .nav-mobile__checkbox:checked ~ .nav-mobile__nav {
-    opacity: 1;
+    display: initial;
     width: 100%; }
-  .nav-mobile__checkbox:checked .nav-mobile__link {
-    display: inline-block; }
   .nav-mobile__icon {
     position: relative;
     margin-top: 50%;
