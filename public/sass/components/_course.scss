@@ -5,6 +5,7 @@
   background-color: $secondary-color-pink;
   border-radius: 0.7rem;
   position: relative;
+
   @include respond(mobile-l) {
     margin-right: 3rem;
     margin-left: 3rem;

@@ -1,6 +1,6 @@
 .nav-mobile {
   display: none;
-
+  color: $secondary-color-white;
   @include respond(tablet-l) {
     display: inline-block;
   }
@@ -62,7 +62,7 @@
         $secondary-color-yellow 40%
       );
       background-size: 220%;
-      transition: all 0.4s;
+      transition: all .2s;
     }
 
     &:hover,

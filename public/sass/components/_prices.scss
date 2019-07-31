@@ -30,10 +30,13 @@
     padding: 1.7rem 8.5rem;
     transform: skewX(-30deg) translateX(-50%);
     box-shadow: 0.5rem 0.7rem 2rem rgba($primary-color-light, 0.2);
-
+    font-weight: 400;
     @include respond(tablet-l) {
       padding: 1rem 2.5rem;
       width: 60%;
+    }
+    @include respond(mobile-l) {
+      width: 75%;
     }
     @include respond(mobile-m) {
       padding: 1rem 2.5rem;
@@ -44,7 +47,9 @@
       width: 80%;
     }
   }
-
+  &__secondary-heading {
+    font-weight: 600;
+  }
   &__skew-wrapper {
     transform: skewX(30deg);
     color: $primary-color-dark;
@@ -53,9 +58,9 @@
 
   &__list {
     margin: 5rem auto;
-    width: 80%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 85%;
     align-items: center;
     & > * {
@@ -74,9 +79,9 @@
         width: 55%;
       }
     }
-    @include respond(mobile-l){
+    @include respond(mobile-l) {
       & > * {
-        width: 80%;;
+        width: 80%;
       }
     }
   }
@@ -89,7 +94,6 @@
     color: $secondary-color-pink;
     font-weight: 500;
     font-weight: 400;
-
     font-size: 3.2rem;
     @include respond(tablet-l) {
       margin-top: 5rem;
