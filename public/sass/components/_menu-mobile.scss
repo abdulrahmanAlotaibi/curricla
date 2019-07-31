@@ -31,6 +31,7 @@
   }
 
   &__list {
+    display: none;
     list-style: none;
     position: absolute;
     top: 50%;
@@ -74,7 +75,9 @@
     opacity: 1;
     width: 100%;
   }
-
+  &__checkbox:checked &__list {
+    display: initial;
+  }
   &__icon {
     position: relative;
     margin-top: 50%;

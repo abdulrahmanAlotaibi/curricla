@@ -414,6 +414,7 @@ ul {
     background-color: #c11f9e;
     transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
   .nav-mobile__list {
+    display: none;
     list-style: none;
     position: absolute;
     top: 50%;
@@ -440,6 +441,8 @@ ul {
   .nav-mobile__checkbox:checked ~ .nav-mobile__nav {
     opacity: 1;
     width: 100%; }
+  .nav-mobile__checkbox:checked .nav-mobile__list {
+    display: initial; }
   .nav-mobile__icon {
     position: relative;
     margin-top: 50%;
