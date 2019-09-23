@@ -4,7 +4,7 @@
   "description": "learning website",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node src/app.js",
     "nodemon": "nodemon src/app.js ",
     "compile:sass": "node-sass src/styles/sass/main.scss src/styles/sass/main.css -w",
     "dev": "run-p nodemon compile:sass"
