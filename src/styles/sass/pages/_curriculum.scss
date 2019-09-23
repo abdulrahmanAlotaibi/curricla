@@ -34,7 +34,7 @@
       justify-content: space-between;
       align-items: center;
       & > * {
-        width: 40%;
+        width: 50%;
         flex-basis: 31rem;
       }
     }
@@ -45,10 +45,11 @@
       }
     }
     @include respond(mobile-l) {
-      // height: 85vh;
+      min-height: 100vh;
       & > * {
-        width: 60%;
+        width: 80%;
         flex-basis: 30%;
+        margin-bottom: 2rem;
       }
     }
   }
@@ -75,13 +76,19 @@
     margin-top: 3rem;
     font-weight: 400;
     font-size: 2.8rem;
+    @include respond(mobile-l) {
+      font-size: 23px;
+    }
   }
   &__description {
-    // font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-top: 1rem;
     color: $secondary-color-white;
     padding: 2.5rem;
     width: 100%;
     display: inline-block;
+    @include respond(mobile-l) {
+      font-size: 16px;
+    }
   }
 }

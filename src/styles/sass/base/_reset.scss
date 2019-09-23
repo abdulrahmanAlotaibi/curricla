@@ -18,10 +18,11 @@ html {
     font-size: 48%;
   }
   @include respond(mobile-m) {
-    font-size: 38%;
+    font-size: 45%;
   }
 }
 
 body {
   box-sizing: border-box;
+  font-size: 1.8rem;
 }
