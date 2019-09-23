@@ -9,9 +9,7 @@
   @include respond(tablet-l) {
     min-height: 150rem;
   }
-  @include respond(mobile-l) {
-    min-height: 200rem;
-  }
+ 
 
   &__primary-heading {
     font-weight: 400;
@@ -20,9 +18,7 @@
     @include respond(laptop-l) {
       font-size: 2.8rem;
     }
-    @include respond(mobile-l) {
-      font-size: 26px;
-    }
+  
   }
 
   &__list {
@@ -71,15 +67,11 @@
     letter-spacing: 0.2rem;
     font-size: 2.2rem;
     margin-bottom: 4rem;
-    @include respond(mobile-l) {
-      font-size: 24px;
-    }
+    
   }
 
   &__description {
     padding: 0 2rem;
-    @include respond(mobile-l) {
-      font-size: 16px;
-    }
+   
   }
 }
