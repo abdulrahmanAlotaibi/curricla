@@ -2,14 +2,14 @@
   padding: 10rem 0;
   color: $primary-color-dark;
   text-align: center;
-  min-height: 100rem;
+  min-height: 100vh;
   &__primary-heading {
     font-weight: 400;
     margin-bottom: 8rem;
     font-size: 2.7rem;
   }
   &__list {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -45,7 +45,7 @@
       }
     }
     @include respond(mobile-l) {
-      height: 85vh;
+      // height: 85vh;
       & > * {
         width: 60%;
         flex-basis: 30%;

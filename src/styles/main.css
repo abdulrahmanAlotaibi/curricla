@@ -37,8 +37,13 @@ body {
 
 @font-face {
   font-family: Nunito;
+<<<<<<< HEAD:src/styles/main.css
   src: url(../../../fonts/nunito-v10-latin-regular.woff2) format("woff2"), url(../../../fonts/nunito-v10-latin-regular.woff) format("woff");
   font-display: auto; }
+=======
+  src: url(/public/fonts/NUNITO-REGULAR.woff2) format("woff2"), url(/public/fonts/nunito-v10-latin-regular.woff) format("woff");
+  font-display: fallback; }
+>>>>>>> 39f5fad59cb00ae06c699ebb01ca725ecc326043:public/dist/style.css
 
 body {
   font-family: Nunito, 'Arial';
@@ -636,13 +641,13 @@ ul {
   padding: 10rem 0;
   color: #070707;
   text-align: center;
-  min-height: 100rem; }
+  min-height: 100vh; }
   .curriculum__primary-heading {
     font-weight: 400;
     margin-bottom: 8rem;
     font-size: 2.7rem; }
   .curriculum__list {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -669,11 +674,9 @@ ul {
       .curriculum__list > * {
         width: 50%; } }
     @media only screen and (max-width: 31.57em) {
-      .curriculum__list {
-        height: 85vh; }
-        .curriculum__list > * {
-          width: 60%;
-          flex-basis: 30%; } }
+      .curriculum__list > * {
+        width: 60%;
+        flex-basis: 30%; } }
   .curriculum__link {
     overflow: hidden;
     text-decoration: none;
