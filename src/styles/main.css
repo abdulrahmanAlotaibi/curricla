@@ -130,7 +130,10 @@ ul {
   width: 100%; }
   @media only screen and (max-width: 57.25em) {
     .about {
-      height: 150rem; } }
+      min-height: 150rem; } }
+  @media only screen and (max-width: 31.57em) {
+    .about {
+      min-height: 200rem; } }
   .about__primary-heading {
     font-weight: 400;
     text-align: center;
@@ -138,12 +141,15 @@ ul {
     @media only screen and (max-width: 105em) {
       .about__primary-heading {
         font-size: 2.8rem; } }
+    @media only screen and (max-width: 31.57em) {
+      .about__primary-heading {
+        font-size: 26px; } }
   .about__list {
     width: 80%;
+    height: 90%;
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-    height: 90%;
     align-items: center; }
     .about__list > * {
       flex-basis: 25%;
@@ -155,7 +161,7 @@ ul {
         padding-top: 7rem;
         font-size: 1.8rem; }
         .about__list > * {
-          flex-basis: 26%;
+          flex-basis: 23%;
           justify-content: space-evenly;
           width: 50%; } }
     @media only screen and (max-width: 89em) {
@@ -173,8 +179,14 @@ ul {
     letter-spacing: 0.2rem;
     font-size: 2.2rem;
     margin-bottom: 4rem; }
+    @media only screen and (max-width: 31.57em) {
+      .about__secondary-heading {
+        font-size: 24px; } }
   .about__description {
     padding: 0 2rem; }
+    @media only screen and (max-width: 31.57em) {
+      .about__description {
+        font-size: 16px; } }
 
 .prices {
   width: 100%;
@@ -265,7 +277,10 @@ ul {
   .prices__description {
     width: 100%;
     padding-top: 2.6rem;
-    font-size: 2.3rem; }
+    font-size: 2.2rem; }
+    @media only screen and (max-width: 31.57em) {
+      .prices__description {
+        font-size: 16px; } }
 
 .track {
   color: #ffffff;
@@ -324,6 +339,9 @@ ul {
     @media only screen and (max-width: 57.25em) {
       .track__description {
         text-align: center; } }
+    @media only screen and (max-width: 31.57em) {
+      .track__description {
+        font-size: 16px; } }
 
 :root {
   --color-white: #ffffff; }

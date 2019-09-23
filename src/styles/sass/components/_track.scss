@@ -75,5 +75,8 @@
     @include respond(tablet-l) {
       text-align: center;
     }
+    @include respond(mobile-l) {
+      font-size: 16px;
+    }
   }
 }

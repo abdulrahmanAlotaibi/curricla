@@ -7,7 +7,10 @@
   width: 100%;
 
   @include respond(tablet-l) {
-    height: 150rem;
+    min-height: 150rem;
+  }
+  @include respond(mobile-l) {
+    min-height: 200rem;
   }
 
   &__primary-heading {
@@ -17,15 +20,17 @@
     @include respond(laptop-l) {
       font-size: 2.8rem;
     }
-  
+    @include respond(mobile-l) {
+      font-size: 26px;
+    }
   }
 
   &__list {
     width: 80%;
+    height: 90%;
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-    height: 90%;
     align-items: center;
 
     & > * {
@@ -39,7 +44,7 @@
       padding-top: 7rem;
       font-size: 1.8rem;
       & > * {
-        flex-basis: 26%;
+        flex-basis: 23%;
         justify-content: space-evenly;
         width: 50%;
       }
@@ -51,8 +56,8 @@
       & > * {
       }
     }
-    @include respond(mobile-l){
-      & > *{
+    @include respond(mobile-l) {
+      & > * {
         width: 70%;
       }
     }
@@ -66,9 +71,15 @@
     letter-spacing: 0.2rem;
     font-size: 2.2rem;
     margin-bottom: 4rem;
+    @include respond(mobile-l) {
+      font-size: 24px;
+    }
   }
 
   &__description {
     padding: 0 2rem;
+    @include respond(mobile-l) {
+      font-size: 16px;
+    }
   }
 }
