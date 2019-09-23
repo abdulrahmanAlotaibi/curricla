@@ -37,8 +37,8 @@ body {
 
 @font-face {
   font-family: Nunito;
-  src: url(/public/fonts/NUNITO-REGULAR.TTF) format("woff2"), url(/public/fonts/nunito-v10-latin-regular.woff) format("woff");
-  font-display: fallback; }
+  src: url(../../../fonts/nunito-v10-latin-regular.woff2) format("woff2"), url(../../../fonts/nunito-v10-latin-regular.woff) format("woff");
+  font-display: optional; }
 
 body {
   font-family: Nunito, 'Arial';
@@ -159,7 +159,11 @@ ul {
           width: 50%; } }
     @media only screen and (max-width: 89em) {
       .about__list {
-        width: 100%; } }
+        width: 100%;
+        padding: 7rem 3rem; } }
+    @media only screen and (max-width: 31.57em) {
+      .about__list > * {
+        width: 70%; } }
   .about__item {
     padding-top: 3.2rem;
     border: 0.2rem solid #C11F9E; }
@@ -271,7 +275,7 @@ ul {
       padding-top: 20rem; } }
   @media only screen and (max-width: 57.25em) {
     .track {
-      height: 45vh;
+      height: 55vh;
       padding-top: 10rem; } }
   .track__wrapper {
     display: flex;
@@ -291,16 +295,11 @@ ul {
         width: 100%; }
         .track__wrapper > * {
           width: 80%;
-          flex-basis: 50%; } }
+          flex-basis: 30%; } }
     @media only screen and (max-width: 57.25em) {
       .track__wrapper--back-end {
         flex-direction: column-reverse; } }
-    @media only screen and (max-width: 23.56em) {
-      .track__wrapper > * {
-        width: 80%;
-        flex-basis: 50%; } }
   .track__heading-box {
-    height: 40rem;
     display: flex;
     align-items: center;
     justify-content: center; }
@@ -312,6 +311,9 @@ ul {
     justify-content: center;
     align-items: center;
     flex-basis: 40%; }
+    @media only screen and (max-width: 57.25em) {
+      .track__description-box {
+        flex-direction: column; } }
   .track__description {
     display: inline-block;
     width: 100%;
@@ -490,7 +492,8 @@ ul {
   margin: 0 auto; }
 
 .main {
-  width: 100%; }
+  width: 100%;
+  min-height: 100rem; }
 
 .header {
   background-color: aquamarine;
@@ -536,7 +539,8 @@ ul {
 
 .section-course {
   padding: 10rem 0;
-  min-height: 100vh; }
+  min-height: 100vh;
+  border-radius: calc(5 * 2px); }
 
 .section-resources {
   margin: 0 auto;
@@ -641,9 +645,10 @@ ul {
     width: 70%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
     .curriculum__list > * {
-      flex-basis: 25%; }
+      flex-basis: 31%; }
     @media only screen and (max-width: 89em) {
       .curriculum__list {
         width: 100%;
@@ -654,12 +659,12 @@ ul {
       .curriculum__list {
         flex-direction: column;
         width: 100%;
-        height: 100vh;
+        min-height: 100rem;
         justify-content: space-between;
         align-items: center; }
         .curriculum__list > * {
           width: 40%;
-          flex-basis: 31%; } }
+          flex-basis: 31rem; } }
     @media only screen and (max-width: 45em) {
       .curriculum__list > * {
         width: 50%; } }

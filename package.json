@@ -5,17 +5,24 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js ",
-    "compile:sass": "node-sass public/sass/main.scss public/dist/style.css -w"
+    "nodemon": "nodemon src/app.js ",
+    "compile:sass": "node-sass src/styles/sass/main.scss src/styles/sass/main.css -w",
+    "dev": "run-p nodemon compile:sass"
   },
   "author": "Abdulrahman Alotaibi",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^9.6.1",
     "express": "^4.17.1",
-    "express-handlebars": "^3.1.0"
+    "express-handlebars": "^3.1.0",
+    "gulp-postcss": "^8.0.0",
+    "postcss-cli": "^6.1.3"
   },
   "devDependencies": {
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
     "node-sass": "^4.12.0",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "npm-run-all": "^4.1.5"
   }
 }

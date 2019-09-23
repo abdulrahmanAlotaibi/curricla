@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Nunito;
+    src: url(../../../fonts/nunito-v10-latin-regular.woff2) format('woff2'),
+        url(../../../fonts/nunito-v10-latin-regular.woff) format('woff');
+    font-display: optional ;
+}
+
+
+body { 
+    font-family: Nunito, 'Arial';
+    font-size: 1.6rem;
+}

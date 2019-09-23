@@ -47,7 +47,13 @@
 
     @include respond(laptop-m) {
       width: 100%;
+      padding: 7rem 3rem;
       & > * {
+      }
+    }
+    @include respond(mobile-l){
+      & > *{
+        width: 70%;
       }
     }
   }

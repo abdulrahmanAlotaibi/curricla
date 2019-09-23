@@ -5,8 +5,7 @@ const path = require("path");
 const app = express();
 
 // Load Routes
-const curric = require("./routes/curriculum");
-
+const curriculum = require("./routes/curriculum");
 
 // Handlebars Middleware
 app.engine(
@@ -15,10 +14,11 @@ app.engine(
     defaultLayout: "main"
   })
 );
+app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "handlebars");
 
 // Static folder
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join("public")));
 
 // Index Page
 app.get("/", (req, res) => {
@@ -30,16 +30,16 @@ app.get("/about", (req, res) => {
   res.render("about");
 });
 
-// FAQ Page
-app.get("/faq", (req, res) => {
-  res.render("faq");
-});
-
 // Use Route
-app.use("/curriculum", curric);
+app.use("/curriculum", curriculum);
+
+// Not Found Page
+app.use("/", (req, res) => {
+  res.render("error")
+})
 
 const port = process.env.PORT || 5000;
- 
-app.listen(port, () =>{
+
+app.listen(port, () => {
   console.log(`Server started on port ${port}`);
 });

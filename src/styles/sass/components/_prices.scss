@@ -3,6 +3,8 @@
   position: relative;
   height: 80rem;
   padding-top: $section-padding-large;
+  
+
   @include respond(tablet-l) {
     height: 120rem;
   }
