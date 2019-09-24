@@ -3,8 +3,8 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
 
-var css = gulp.task("css", function() {
-  var plugins = [
+const css = gulp.task("css", function() {
+  const plugins = [
     autoprefixer(),
     cssnano({
       preset: "default"
@@ -16,6 +16,3 @@ var css = gulp.task("css", function() {
     .pipe(gulp.dest("./public/styles"));
 });
 
-// gulp.task("watch", function() {
-//   gulp.watch("src/*.css", ["css"]);
-// });
